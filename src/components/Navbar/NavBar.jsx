@@ -1,4 +1,5 @@
-import '../Navbar/Navbar.css'
+import '../Navbar/Navbar.css';
+import magnifyGlass from '../../assets/magnifyGlass.png';
 
 const NavBar = () => {
   return (
@@ -16,10 +17,8 @@ const NavBar = () => {
         </ul>
         <div className='search-box'>
             <input type='text' placeholder='Search' />
-            <img src="" alt="" />
+            <img src={magnifyGlass} alt="" />
         </div>
-
-        <img src="" alt="" className='toggle-icon' />
     </div>
   )
 }
