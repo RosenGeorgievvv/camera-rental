@@ -3,8 +3,18 @@ import '../Navbar/Navbar.css'
 
 const NavBar = () => {
   return (
-    <div>
-        <h1>Hello</h1>
+    <div className='navbar'>
+        <img src="" alt="" className='logo' />
+        <ul>
+            <li>Cameras</li>
+            <li>Lenses & Filters</li>
+            <li>Accessories</li>
+            <li>Grip</li>
+            <li>Lighting</li>
+            <li>Sound</li>
+            <li>Contact Us</li>
+            <li>About Us</li>
+        </ul>
     </div>
   )
 }
