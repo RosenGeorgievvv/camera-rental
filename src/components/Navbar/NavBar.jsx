@@ -14,6 +14,12 @@ const NavBar = () => {
             <li>Contact Us</li>
             <li>About Us</li>
         </ul>
+        <div className='search-box'>
+            <input type='text' placeholder='Search' />
+            <img src="" alt="" />
+        </div>
+
+        <img src="" alt="" className='toggle-icon' />
     </div>
   )
 }
