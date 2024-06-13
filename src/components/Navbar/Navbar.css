@@ -5,9 +5,10 @@
     justify-content: space-between;
     background: #fff;
     padding: 15px 7%;
+    transition: 0.5s;
 }
 .logo{
-    width: 80px;
+    width: 60px;
     cursor: pointer;
     border-radius: 50%;
 }
@@ -50,4 +51,17 @@ ul li{
 .seach-box img{
     width: 20px;
     cursor: pointer;
+}
+.navbar.dark{
+    background: #222;
+    color: #fff
+}
+.dark .search-box  {
+    background: #fff;
+}
+.dark .seach-box input {
+    color: #222;
+}
+.dark .seach-box input::placeholder{
+    color: #222;
 }
