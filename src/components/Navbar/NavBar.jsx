@@ -1,10 +1,9 @@
 import "../Navbar/Navbar.css";
-import magnifyGlass from "../../assets/magnifyGlass.png";
 import whiteSun from "../../assets/whiteSun.png";
 import moon from "../../assets/moon.png";
 import darklogo from "../../assets/darklogo.jpg";
 import whitelogo from '../../assets/whitelogo.jpg';
-import whiteGlass from '../../assets/whiteGlass.png';
+
 
 const NavBar = ({ theme, setTheme }) => {
 
