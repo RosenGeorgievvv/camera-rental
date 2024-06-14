@@ -7,7 +7,7 @@ import whitelogo from '../../assets/whitelogo.jpg';
 import whiteGlass from '../../assets/whiteGlass.png';
 
 const NavBar = ({ theme, setTheme }) => {
-  
+   
     const toggle_mode = () =>{
         theme == 'light' ? setTheme('dark') : setTheme('light');
     }
