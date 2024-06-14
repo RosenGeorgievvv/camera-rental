@@ -1,6 +1,6 @@
 import "../Navbar/Navbar.css";
 import magnifyGlass from "../../assets/magnifyGlass.png";
-import sun from "../../assets/sun.png";
+import whiteSun from "../../assets/whiteSun.png";
 import moon from "../../assets/moon.png";
 import darklogo from "../../assets/darklogo.jpg";
 import whitelogo from '../../assets/whitelogo.jpg';
@@ -29,7 +29,7 @@ const NavBar = ({ theme, setTheme }) => {
         <img src={magnifyGlass} alt="" />
       </div>
 
-      <img onClick={() =>{toggle_mode()}} src={theme == 'light' ? moon : sun} alt="" className="toggle-icon" />
+      <img onClick={() =>{toggle_mode()}} src={theme == 'light' ? moon : whiteSun} alt="" className="toggle-icon" />
     </div>
   );
 };
