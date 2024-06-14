@@ -29,39 +29,7 @@ ul li{
     cursor: pointer;
     margin-left: 40px;
 }
-.search-box{
-    display: flex;
-    align-items: center;    
-    background: #242424;
-    padding: 0px 20px;
-    border-radius: 50px;
-}
-.search-box input {
-    padding: 6px;
-    background: transparent;
-    border: 0;
-    outline: 0;
-    color: #fff;
-    font-size: 15px;
-    max-width: 200px;
-}
-.search-box input::placeholder{
-    color: #fff;
-}
-.seach-box img{
-    width: 20px;
-    cursor: pointer;
-}
 .navbar.dark{
-    background: #222;
+    background: #000000;
     color: #fff
-}
-.dark .search-box  {
-    background: #fff;
-}
-.dark .seach-box input {
-    color: #222;
-}
-.dark .seach-box input::placeholder{
-    color: #222;
 }

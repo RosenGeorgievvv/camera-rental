@@ -4,6 +4,7 @@ import whiteSun from "../../assets/whiteSun.png";
 import moon from "../../assets/moon.png";
 import darklogo from "../../assets/darklogo.jpg";
 import whitelogo from '../../assets/whitelogo.jpg';
+import whiteGlass from '../../assets/whiteGlass.png';
 
 const NavBar = ({ theme, setTheme }) => {
 
@@ -24,11 +25,6 @@ const NavBar = ({ theme, setTheme }) => {
         <li>Contact Us</li>
         <li>About Us</li>
       </ul>
-      <div className={`search-box ${theme}`}>
-        <input type="text" placeholder="Search" />
-        <img src={magnifyGlass} alt="" />
-      </div>
-
       <img onClick={() =>{toggle_mode()}} src={theme == 'light' ? moon : whiteSun} alt="" className="toggle-icon" />
     </div>
   );
