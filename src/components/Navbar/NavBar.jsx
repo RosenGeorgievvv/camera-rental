@@ -1,6 +1,6 @@
 import "../Navbar/Navbar.css";
-import whiteSun from "../../assets/whiteSun.png";
-import moon from "../../assets/moon.png";
+import sunny from "../../assets/sunny.png";
+import night from "../../assets/night.png";
 import darklogo from "../../assets/darklogo.jpg";
 import whitelogo from '../../assets/whitelogo.jpg';
 
@@ -22,9 +22,8 @@ const NavBar = ({ theme, setTheme }) => {
         <li>Lighting</li>
         <li>Sound</li>
         <li>Contact Us</li>
-        <li>About Us</li>
       </ul>
-      <img onClick={() =>{toggle_mode()}} src={theme == 'light' ? moon : whiteSun} alt="" className="toggle-icon" />
+      <img onClick={() =>{toggle_mode()}} src={theme == 'light' ? night : sunny} alt="" className="toggle-icon" />
     </div>
   );
 };
