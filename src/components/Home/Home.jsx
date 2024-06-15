@@ -8,14 +8,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      {data.map((card, index) => (
-        <Card
-          key={index}
-          title={card.title}
-          content={card.content}
-          imageUrl={card.imageUrl}
-        />
-      ))}
+      <h1>Hi</h1>
     </div>
   )
 }
