@@ -1,6 +1,4 @@
-import Card from '../Card';
 import '../Home/home.css';
-import data from '../../data.js'
 
 
 const Home = () => {
