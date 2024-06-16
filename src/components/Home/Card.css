@@ -1,6 +1,7 @@
 .section-box {
     display: inline-block;
-    flex-direction: row;
+    flex-direction:row;
+    gap: 40px;
     background-color: #f8f8f8;
     border: 1px solid #e6e6e6;
     border-radius: 8px;
@@ -15,7 +16,7 @@
   }
   
   .section-box-image {
-    max-width: 50%;
+    max-width: 60%;
     height: auto;
     border-radius: 8px;
     cursor: pointer;
