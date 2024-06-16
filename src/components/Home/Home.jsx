@@ -1,16 +1,19 @@
-import '../Home/home.css';
-import data from "../../data.js"
-
+import data from '../../data.js';
+import Card from './Card';
 
 const Home = () => {
-
-
   return (
-    <div className="home">
-          
-    
+    <div>
+      {data.map((item, index) => (
+        <Card
+          key={index}
+          img={item.img}
+          name={item.name}
+          des={item.des}
+        />
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

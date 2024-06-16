@@ -1,0 +1,40 @@
+.section-box {
+    background-color: #f8f8f8;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    transition: 0.7s;
+    flex-direction: column;
+  }
+  
+  .section-box-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .section-box-title {
+    color: #333;
+    margin: 16px 0 8px;
+    font-size: 24px;
+  }
+  
+  .section-box-content {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .section-box:hover {
+    transform: scale(1.05); /* Scale up smoothly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  }
