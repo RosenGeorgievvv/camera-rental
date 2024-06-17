@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "../Navbar/Navbar.css";
 import sunny from "../../assets/sunny.png";
 import night from "../../assets/night.png";
-import darklogo from "../../assets/darklogo.jpg";
-import whitelogo from '../../assets/whitelogo.jpg';
+import magicDark from '../../assets/Navigation/magicDark.png'
+import magicLight from '../../assets/Navigation/magicLight.png'
 
 const NavBar = ({ theme, setTheme }) => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -31,7 +31,7 @@ const NavBar = ({ theme, setTheme }) => {
 
     return (
         <div className={`navbar ${theme}`}>
-            <img src={theme === 'light' ? whitelogo : darklogo} alt="" className="logo" />
+            <img src={theme === 'light' ? magicLight : magicDark} alt="" className="logo" />
             <div className="menu-container">
                 {isMobile && (
                     <div className="hamburger" onClick={toggleMenu}>
