@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-column">
           <ul>
-            <li>
+            <li> 
               <img src={email} alt="email" /> office@magicshoprental.com
             </li>
             <li>
