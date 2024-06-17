@@ -23,39 +23,27 @@
     font-size: 18px;
     border-bottom: 2px solid #555;
     padding-bottom: 5px;
+    text-align: center;
 }
-
-.footer-column p {
-    line-height: 1.6;
-}
-
 .footer-column ul {
+    display: flex;
     list-style: none;
     padding: 0;
+    ;
 }
 
 .footer-column ul li {
-    margin-bottom: 10px;
+    margin: 10px 76px;
+    color: #fff;
 }
 
 .footer-column .social-icons {
     display: flex;
     gap: 10px;
 }
-
-.footer-column .social-icons img {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-}
-
-.footer-column .social-icons img:hover {
-    opacity: 0.7;
-}
-
 .footer-bottom {
     text-align: center;
     margin-top: 20px;
-    border-top: 1px solid #555;
+    border-top: 1px solid #c4c2c2;
     padding-top: 10px;
 }
