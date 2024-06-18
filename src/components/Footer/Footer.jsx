@@ -25,7 +25,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>&copy; 2024 Magic Shop. All rights reserved.</p>
       </div>
-    </footer>   
+    </footer>  
   );
 };
 
