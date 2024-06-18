@@ -2,7 +2,7 @@ import "./footer.css";
 import email from "../../assets/Footer/email.png";
 import facebook from "../../assets/Footer/facebook.png";
 import phoneIcon from "../../assets/Footer/phoneIcon.png";
- 
+  
 const Footer = () => {
   return (
     <footer className="footer">
