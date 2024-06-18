@@ -4,7 +4,7 @@ import facebook from "../../assets/Footer/facebook.png";
 import phoneIcon from "../../assets/Footer/phoneIcon.png";
    
 const Footer = () => {
-  return (
+  return ( 
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-column">
