@@ -4,8 +4,8 @@ import facebook from "../../assets/Footer/facebook.png";
 import phoneIcon from "../../assets/Footer/phoneIcon.png";
    
 const Footer = () => {
-  return (        
-    <footer className="footer">
+  return (         
+    <footer className="footer"> 
       <div className="footer-container">
         <div className="footer-column">
           <ul>
