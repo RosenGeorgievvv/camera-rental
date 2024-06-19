@@ -7,7 +7,7 @@
 .footer-container {
     display: flex;
     flex-direction: column; /* Stack columns vertically */
-    align-items: center; /* Center items horizontally */
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
 }
