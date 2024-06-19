@@ -1,31 +1,42 @@
+import React from "react";
 import "./footer.css";
 import email from "../../assets/Footer/email.png";
 import facebook from "../../assets/Footer/facebook.png";
 import phoneIcon from "../../assets/Footer/phoneIcon.png";
 
-const Footer = () => {
+const Footer = ({ theme }) => {
+  const isMobileDevice = () => {
+    return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  };
+
+  const mobileDevice = isMobileDevice();
+
   return (
-    <footer className="footer">
+    <footer className={`footer ${theme}`}>
       <div className="footer-container">
         <div className="footer-column">
           <ul>
             <li>
-            <a href="mailto:office@magicshoprental.com" className="email-link">
+              <a href="mailto:office@magicshoprental.com" className="email-link">
                 <img src={email} alt="email" /> office@magicshoprental.com
               </a>
             </li>
             <li>
-              <img src={phoneIcon} alt="phoneIcon" />: +359 897 89 05 53
+              {mobileDevice ? (
+                <a href="tel:+359897890553" className="phone-link">
+                  <img src={phoneIcon} alt="phoneIcon" /> +359 897 89 05 53
+                </a>
+              ) : (
+                <>
+                  <img src={phoneIcon} alt="phoneIcon" /> +359 897 89 05 53
+                </>
+              )}
             </li>
             <li>Address: Levski – G 47, Sofia, Bulgaria</li>
           </ul>
         </div>
         <div className="social-icons">
-          <a
-            href="https://www.facebook.com/MagicShopRental"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://www.facebook.com/MagicShopRental" target="_blank" rel="noopener noreferrer">
             <img src={facebook} alt="facebook" />
           </a>
         </div>

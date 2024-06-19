@@ -13,7 +13,7 @@ function App() {
       <NavBar theme={theme} setTheme={setTheme} />
       <Home />
     </div>
-    <Footer />
+    <Footer theme={theme} />
     </>
     
   );
