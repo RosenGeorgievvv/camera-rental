@@ -23,7 +23,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center; /* Center text within list items */
+    text-align: center;
 }
 
 .footer-column ul li {
