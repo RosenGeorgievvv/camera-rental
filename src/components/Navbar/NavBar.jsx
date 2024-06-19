@@ -33,7 +33,7 @@ const NavBar = ({ theme, setTheme }) => {
         setMenuOpen(!menuOpen);
     };
 
-    const scrollToFooter = () => {     
+    const scrollToFooter = () => {      
         const footerElement = document.getElementById("contact-us");
         footerElement.scrollIntoView({ behavior: "smooth" });
     };
