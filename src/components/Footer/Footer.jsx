@@ -16,7 +16,7 @@ const Footer = ({ theme }) => {
   const mobileDevice = isMobileDevice();
 
   return (
-    <footer className={`footer ${theme}`}>
+    <footer className={`footer ${theme}`} id="contact-us">
       <div className="footer-container">
         <div className="footer-column">
           <ul>
@@ -31,12 +31,12 @@ const Footer = ({ theme }) => {
                   <img src={phoneIcon} alt="phoneIcon" /> +359 897 89 05 53
                 </a>
               ) : (
-                <span className="phone-link">
+                <>
                   <img src={phoneIcon} alt="phoneIcon" /> +359 897 89 05 53
-                </span>
+                </>
               )}
             </li>
-            <li onClick={navigateToGoogleMaps} className="address-link">
+            <li onClick={navigateToGoogleMaps} style={{ cursor: "pointer" }}>
               Address: Levski – G 47, Sofia, Bulgaria
             </li>
           </ul>
