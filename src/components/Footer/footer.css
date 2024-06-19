@@ -56,3 +56,14 @@
     border-top: 1px solid #c4c2c2;
     padding-top: 10px;
 }
+
+.email-link {
+    color: inherit; 
+    text-decoration: none; 
+    display: flex; 
+    align-items: center;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
