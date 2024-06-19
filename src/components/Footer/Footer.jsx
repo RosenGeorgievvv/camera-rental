@@ -5,6 +5,10 @@ import facebook from "../../assets/Footer/facebook.png";
 import phoneIcon from "../../assets/Footer/phoneIcon.png";
 
 const Footer = ({ theme }) => {
+  const navigateToGoogleMaps = () => {
+    window.open("https://maps.app.goo.gl/xTdavzVhzMRnWP7z7", "_blank");
+  };
+
   const isMobileDevice = () => {
     return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
   };
@@ -27,12 +31,14 @@ const Footer = ({ theme }) => {
                   <img src={phoneIcon} alt="phoneIcon" /> +359 897 89 05 53
                 </a>
               ) : (
-                <>
+                <span className="phone-link">
                   <img src={phoneIcon} alt="phoneIcon" /> +359 897 89 05 53
-                </>
+                </span>
               )}
             </li>
-            <li>Address: Levski – G 47, Sofia, Bulgaria</li>
+            <li onClick={navigateToGoogleMaps} className="address-link">
+              Address: Levski – G 47, Sofia, Bulgaria
+            </li>
           </ul>
         </div>
         <div className="social-icons">

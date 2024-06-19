@@ -12,8 +12,6 @@
     padding: 0px 40px;
     position: relative;
     background-color: var(--background-color-light); /* Use light theme by default */
-    color: var(--text-color-light); /* Use light theme text by default */
-    transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar.dark {
@@ -22,8 +20,8 @@
 }
 
 .navbar .logo {
-    height: 40px;
-    width: auto;
+    height: 40%;
+    width: 5%;
 }
 
 .navbar .menu-container {
@@ -40,6 +38,43 @@
 .navbar .nav-links li {
     margin: 15px 15px;
     cursor: pointer;
+    position: relative;
+}
+
+.navbar .nav-links li.dropdown:hover .dropdown-content {
+    display: block;
+    max-height: 200px;
+}
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--background-color-light);
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.navbar .dropdown-content li {
+    color: var(--text-color-light);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar.dark .dropdown-content {
+    background-color: var(--background-color-dark);
+}
+
+.navbar .dropdown-content li:hover {
+    background-color: #ddd;
+}
+
+.navbar.dark .dropdown-content li:hover {
+    background-color: #555;
 }
 
 .navbar .toggle-icon {
@@ -55,7 +90,42 @@
     border: none;
 }
 
-/* Toggle slider animation */
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        background-color: var(--background-color-light);
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+        max-height: 0px;
+        overflow: hidden;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    .navbar.dark .nav-links {
+        background-color: var(--background-color-dark);
+    }
+
+    .nav-links.open {
+        max-height: 350px;
+    }
+
+    .nav-links li {
+        margin: 10px 0px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Add this CSS to your Navbar.css file */
+
 .toggle-container {
     display: flex;
     align-items: center;
@@ -75,7 +145,6 @@
     background-color: #ccc;
     border-radius: 34px;
     cursor: pointer;
-    margin-left: 10px;
 }
 
 .toggle-label::before {
@@ -122,38 +191,4 @@
 
 .theme-toggle:checked + .toggle-label .toggle-icon:last-of-type {
     opacity: 1;
-}
-
-/* Media Queries for Mobile View */
-@media (max-width: 768px) {
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 90px;
-        right: 0;
-        background-color: var(--background-color-light);
-        width: 100%;
-        text-align: center;
-        padding: 0px;
-        max-height: 0px;
-        overflow: hidden;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    }
-
-    .navbar.dark .nav-links {
-        background-color: var(--background-color-dark);
-    }
-
-    .nav-links.open {
-        max-height: 350px;
-    }
-
-    .nav-links li {
-        margin: 10px 0px;
-    }
-
-    .hamburger {
-        display: block;
-    }
 }

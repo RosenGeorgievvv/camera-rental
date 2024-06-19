@@ -52,11 +52,12 @@
 
 .social-icons {
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .social-icons img {
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
 }
 
@@ -74,17 +75,11 @@
     align-items: center;
 }
 
-.email-link:hover {
+.footer-column ul li a:hover {
     text-decoration: underline;
 }
 
-.phone-link {
-    color: inherit; /* Inherit color based on theme */
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-}
-
-.phone-link:hover {
-    text-decoration: underline;
+.phone-link,
+.address-link {
+    cursor: pointer;
 }
