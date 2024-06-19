@@ -12,6 +12,8 @@
     padding: 0px 40px;
     position: relative;
     background-color: var(--background-color-light); /* Use light theme by default */
+    color: var(--text-color-light); /* Use light theme text by default */
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar.dark {
@@ -20,8 +22,8 @@
 }
 
 .navbar .logo {
-    height: 40%;
-    width: 5%;
+    height: 40px;
+    width: auto;
 }
 
 .navbar .menu-container {
@@ -51,6 +53,75 @@
     font-size: 24px;
     background: none;
     border: none;
+}
+
+/* Toggle slider animation */
+.toggle-container {
+    display: flex;
+    align-items: center;
+}
+
+.theme-toggle {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-label {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 34px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.toggle-label::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.theme-toggle:checked + .toggle-label::before {
+    transform: translateX(26px);
+}
+
+.theme-toggle:checked + .toggle-label {
+    background-color: #2196F3;
+}
+
+.toggle-label .toggle-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 7px;
+    transition: opacity 0.3s;
+}
+
+.toggle-label .toggle-icon:first-of-type {
+    left: 8px;
+    opacity: 1;
+}
+
+.theme-toggle:checked + .toggle-label .toggle-icon:first-of-type {
+    opacity: 0;
+}
+
+.toggle-label .toggle-icon:last-of-type {
+    right: 8px;
+    opacity: 0;
+}
+
+.theme-toggle:checked + .toggle-label .toggle-icon:last-of-type {
+    opacity: 1;
 }
 
 /* Media Queries for Mobile View */

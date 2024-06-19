@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "../Navbar/Navbar.css";
 import sunny from "../../assets/sunny.png";
 import night from "../../assets/night.png";
-import logo from '../../assets/Navigation/logo.png'
-import magicLight from '../../assets/Navigation/magicLight-2.png'
+import logo from '../../assets/Navigation/logo.png';
+import magicLight from '../../assets/Navigation/magicLight-2.png';
 
 const NavBar = ({ theme, setTheme }) => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -23,6 +23,10 @@ const NavBar = ({ theme, setTheme }) => {
 
     const toggle_mode = () => {
         theme === 'light' ? setTheme('dark') : setTheme('light');
+    };
+
+    const handleSliderChange = () => {
+        toggle_mode();
     };
 
     const toggleMenu = () => {
@@ -48,7 +52,19 @@ const NavBar = ({ theme, setTheme }) => {
                     <li>Contact Us</li>
                 </ul>
             </div>
-            <img onClick={toggle_mode} src={theme === 'light' ? night : sunny} alt="" className="toggle-icon" />
+            <div className="toggle-container">
+                <input
+                    type="checkbox"
+                    id="theme-toggle"
+                    className="theme-toggle"
+                    checked={theme === 'dark'}
+                    onChange={handleSliderChange}
+                />
+                <label htmlFor="theme-toggle" className="toggle-label">
+                    <img src={sunny} alt="light mode" className="toggle-icon" />
+                    <img src={night} alt="dark mode" className="toggle-icon" />
+                </label>
+            </div>
         </div>
     );
 };
