@@ -8,6 +8,6 @@ const Card = ({ img, name, des }) => {
       <p className="section-box-content">{des}</p>
     </div> 
   );  
-};
+}; 
 
 export default Card;
