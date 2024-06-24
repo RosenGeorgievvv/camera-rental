@@ -59,7 +59,7 @@
     overflow: hidden;
     max-height: 0;
     opacity: 0;
-    border-radius: 8px; /* Rounded corners for dropdown */
+    border-radius: 8px;
 }
 
 .navbar .dropdown-content li {
