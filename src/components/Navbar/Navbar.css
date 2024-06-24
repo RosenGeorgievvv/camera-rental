@@ -75,6 +75,9 @@
 .navbar.dark .dropdown-content {
     background-color: var(--background-color-dark);
 }
+.navbar.dark .dropdown-content li {
+    color: white;
+}
 
 .navbar .dropdown-content li:hover {
     background-color: #ddd;
@@ -82,7 +85,8 @@
 }
 
 .navbar.dark .dropdown-content li:hover {
-    background-color: #555;
+    background-color: #e0e0e0;
+    color: #333;
 }
 
 .navbar .toggle-icon {
