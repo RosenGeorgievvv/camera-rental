@@ -16,7 +16,7 @@ const NavBar = ({ theme, setTheme }) => {
                 setMenuOpen(false);
             }
         };
-           
+
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
@@ -38,6 +38,20 @@ const NavBar = ({ theme, setTheme }) => {
         footerElement.scrollIntoView({ behavior: "smooth" });
     };
 
+    const arrowIcon = (
+        <svg
+            className="arrow-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="16px"
+            height="16px"
+            fill="#000000"
+        >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M7 10l5 5 5-5H7z" />
+        </svg>
+    );
+
     return (
         <div className={`navbar ${theme}`}>
             <img src={theme === 'light' ? logo : magicLight} alt="" className="logo" />
@@ -49,7 +63,7 @@ const NavBar = ({ theme, setTheme }) => {
                 )}
                 <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
                     <li className="dropdown">
-                        Cameras
+                        Cameras {arrowIcon}
                         <ul className="dropdown-content">
                             <li>Video</li>
                             <li>Cine</li>
@@ -57,7 +71,7 @@ const NavBar = ({ theme, setTheme }) => {
                         </ul>
                     </li>
                     <li className="dropdown">
-                        Lenses & Filters
+                        Lenses & Filters {arrowIcon}
                         <ul className="dropdown-content">
                             <li>Photo Lenses</li>
                             <li>Cine Lenses</li>
@@ -65,7 +79,7 @@ const NavBar = ({ theme, setTheme }) => {
                         </ul>
                     </li>
                     <li className="dropdown">
-                        Accessories
+                        Accessories {arrowIcon}
                         <ul className="dropdown-content">
                             <li>Batteries</li>
                             <li>Cables</li>
@@ -80,7 +94,7 @@ const NavBar = ({ theme, setTheme }) => {
                         </ul>
                     </li>
                     <li className="dropdown">
-                        Grip
+                        Grip {arrowIcon}
                         <ul className="dropdown-content">
                             <li>Booms</li>
                             <li>Tripods</li>
