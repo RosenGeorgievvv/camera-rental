@@ -1,10 +1,10 @@
-import cam2 from '../src/assets/cam2.jpg'
+import sonyFX3 from '../src/assets/cameras/sony-fx3.jpeg'
 
 export default[
     {
-        img: cam2,
-        name: "Camera One",
-        des: "This is an example text. It will be replaced with actual description."
+        img: sonyFX3,
+        name: "Sony FX3",
+        type: 'photo'
     },
     {
         img: cam2,
