@@ -8,14 +8,14 @@ import magicLight from '../../assets/Navigation/magicLight-2.png';
 const NavBar = ({ theme, setTheme }) => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-    const [dropdownOpen, setDropdownOpen] = useState(null); 
+    const [dropdownOpen, setDropdownOpen] = useState(null); // State to track which dropdown is open
 
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 768);
             if (window.innerWidth > 768) {
                 setMenuOpen(false);
-                setDropdownOpen(null);
+                setDropdownOpen(null); // Close dropdowns when resizing to desktop view
             }
         };
 
@@ -33,7 +33,7 @@ const NavBar = ({ theme, setTheme }) => {
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
-        setDropdownOpen(null);
+        setDropdownOpen(null); 
     };
 
     const toggleDropdown = (index) => {

@@ -141,6 +141,12 @@
         box-shadow: none;
         max-height: none;
         overflow: visible;
+        display: none; /* Ensure it's hidden initially */
+    }
+
+    .navbar .nav-links li.dropdown .dropdown-content.show {
+        display: block;
+        margin: 0 auto; /* Center the dropdown */
     }
 
     .navbar.dark .dropdown-content {
