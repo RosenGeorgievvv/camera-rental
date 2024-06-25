@@ -76,7 +76,7 @@
 }
 
 .navbar.dark .dropdown-content li {
-    color: white;
+    color: #333;
 }
 
 .navbar .dropdown-content li:hover {
