@@ -5,17 +5,17 @@ import "slick-carousel/slick/slick-theme.css";
 
 import banner1 from "../../assets/banner/banner1.jpg";
 import banner2 from "../../assets/banner/banner2.jpg";
-import banner3 from "../../assets/banner/banner3.jpg";
+import banner4 from "../../assets/banner/banner4.jpg";
 
 import data from "../../data.js";
-import Card from "./Card";
-import "./Home.css";
+import Card from "./cardTemplate/Card.jsx";
+import "./home.css";
 
 const Home = () => {
   const bannerImages = [
     banner1,
     banner2,
-    banner3,
+    banner4,
   ];
 
   const settings = {
@@ -40,7 +40,9 @@ const Home = () => {
           ))}
         </Slider>
       </div>
-      <div>
+
+      
+      {/* <div>
         {data.map((item, index) => (
           <Card
             key={index}
@@ -50,7 +52,7 @@ const Home = () => {
             type={item.type}
           />
         ))}
-      </div>
+      </div> */}
     </>
   );
 };

@@ -8,12 +8,14 @@ import magicLight from '../../assets/Navigation/magicLight-2.png';
 const NavBar = ({ theme, setTheme }) => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    const [dropdownOpen, setDropdownOpen] = useState(null); 
 
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 768);
             if (window.innerWidth > 768) {
                 setMenuOpen(false);
+                setDropdownOpen(null);
             }
         };
 
@@ -21,16 +23,21 @@ const NavBar = ({ theme, setTheme }) => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
-    const toggle_mode = () => {
+    const toggleMode = () => {
         theme === 'light' ? setTheme('dark') : setTheme('light');
     };
 
     const handleSliderChange = () => {
-        toggle_mode();
+        toggleMode();
     };
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
+        setDropdownOpen(null);
+    };
+
+    const toggleDropdown = (index) => {
+        setDropdownOpen(dropdownOpen === index ? null : index);
     };
 
     const scrollToFooter = () => {
@@ -62,25 +69,25 @@ const NavBar = ({ theme, setTheme }) => {
                     </div>
                 )}
                 <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
-                    <li className="dropdown">
+                    <li className="dropdown" onClick={() => toggleDropdown(0)}>
                         Cameras {arrowIcon}
-                        <ul className="dropdown-content">
+                        <ul className={`dropdown-content ${dropdownOpen === 0 ? 'show' : ''}`}>
                             <li>Video</li>
                             <li>Cine</li>
                             <li>Photo</li>
                         </ul>
                     </li>
-                    <li className="dropdown">
+                    <li className="dropdown" onClick={() => toggleDropdown(1)}>
                         Lenses & Filters {arrowIcon}
-                        <ul className="dropdown-content">
+                        <ul className={`dropdown-content ${dropdownOpen === 1 ? 'show' : ''}`}>
                             <li>Photo Lenses</li>
                             <li>Cine Lenses</li>
                             <li>Filters</li>
                         </ul>
                     </li>
-                    <li className="dropdown">
+                    <li className="dropdown" onClick={() => toggleDropdown(2)}>
                         Accessories {arrowIcon}
-                        <ul className="dropdown-content">
+                        <ul className={`dropdown-content ${dropdownOpen === 2 ? 'show' : ''}`}>
                             <li>Batteries</li>
                             <li>Cables</li>
                             <li>Follow Focus</li>
@@ -93,9 +100,9 @@ const NavBar = ({ theme, setTheme }) => {
                             <li>Wireless Video</li>
                         </ul>
                     </li>
-                    <li className="dropdown">
+                    <li className="dropdown" onClick={() => toggleDropdown(3)}>
                         Grip {arrowIcon}
-                        <ul className="dropdown-content">
+                        <ul className={`dropdown-content ${dropdownOpen === 3 ? 'show' : ''}`}>
                             <li>Booms</li>
                             <li>Tripods</li>
                             <li>Heads</li>
