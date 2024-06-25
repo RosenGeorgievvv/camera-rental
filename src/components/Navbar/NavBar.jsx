@@ -8,7 +8,7 @@ import magicLight from '../../assets/Navigation/magicLight-2.png';
 const NavBar = ({ theme, setTheme }) => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-    const [dropdownOpen, setDropdownOpen] = useState(null); // State to track which dropdown is open
+    const [dropdownOpen, setDropdownOpen] = useState(null);
 
     useEffect(() => {
         const handleResize = () => {
