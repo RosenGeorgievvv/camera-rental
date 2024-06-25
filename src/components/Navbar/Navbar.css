@@ -76,7 +76,7 @@
 }
 
 .navbar.dark .dropdown-content li {
-    color: white;
+    color: #333;
 }
 
 .navbar .dropdown-content li:hover {
@@ -122,6 +122,9 @@
     .navbar .logo {
         height: 25px;
         width: 80px;
+    }
+    .navbar.dark .dropdown-content li {
+        color: white;
     }
 
     .navbar.dark .nav-links {
