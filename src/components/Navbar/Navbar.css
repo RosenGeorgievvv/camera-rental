@@ -15,7 +15,7 @@
 }
 
 .navbar.dark {
-    background-color: var(--background-color-dark); /* Use dark theme for navbar */
+    background-color: var(--background-color-dark);
     color: var(--text-color-dark);
 }
 
@@ -56,7 +56,7 @@
 
 .navbar .nav-links li.dropdown:hover .dropdown-content {
     display: block;
-    max-height: 500px; /* Adjust max-height to ensure it can expand to show all items */
+    max-height: 500px;
     opacity: 1;
 }
 
