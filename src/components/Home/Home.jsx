@@ -3,23 +3,26 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+import banner1 from '../../assets/banner/banner1.jpg';
+import banner2 from '../../assets/banner/banner2.jpg';
+import banner3 from '../../assets/banner/banner3.jpg';
+
 import data from "../../data.js";
 import Card from "./Card";
 
 const Home = () => {
   // Array of image URLs for the banner slideshow
   const bannerImages = [
-    'image1.jpg',
-    'image2.jpg',
-    'image3.jpg',
-    // Add more image URLs as needed
+    banner1,
+    banner2,
+    banner3,
   ];
 
   // Settings for the Slider
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
