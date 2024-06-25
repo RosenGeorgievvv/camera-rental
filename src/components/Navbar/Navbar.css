@@ -66,7 +66,7 @@
     text-decoration: none;
     display: block;
     white-space: nowrap;
-    font-size: calc(0.6rem + 0.6vw);
+    font-size: calc(0.3rem + 0.5vw);
     text-align: center;
     justify-content: center;
 }
@@ -130,6 +130,9 @@
 
     .nav-links li {
         margin: 10px 0px;
+    }
+    .navbar .nav-links li {
+        font-size: 15px;
     }
 
     .hamburger {
