@@ -15,7 +15,7 @@ const NavBar = ({ theme, setTheme }) => {
             setIsMobile(window.innerWidth <= 768);
             if (window.innerWidth > 768) {
                 setMenuOpen(false);
-                setDropdownOpen(null); // Close dropdowns when resizing to desktop view
+                setDropdownOpen(null); 
             }
         };
 
