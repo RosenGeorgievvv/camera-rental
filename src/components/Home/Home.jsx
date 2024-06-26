@@ -10,7 +10,7 @@ import "./home.css";
 
 const Home = () => {
 
-
+ 
   return (
     <div className="cards-container">
       {data.map((card, index) => (
