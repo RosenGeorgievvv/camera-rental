@@ -6,6 +6,6 @@
   
   .cards-container .section-box {
     flex: 0 1 calc(50% - 60px); /* 2 cards per row, accounting for margin */
-    margin: 40px;  
+    margin: 40px;   
   }
   
