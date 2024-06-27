@@ -9,7 +9,7 @@ import Card from "./cardTemplate/Card.jsx";
 import "./home.css";
 
 const Home = () => {
-     
+
    
   return (
     <div className="cards-container">
