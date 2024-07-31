@@ -19,5 +19,10 @@ export default[
         img: canon5d,
         name: "CANON 5d mark 4",
         des: "30.4MP (CMOS Bayer RGB) / Full-Frame (36x24mm) / DCI 4K (4096 x 2160)30p / Canon EF / 1/8000s / 1/200s"
+    },
+    {
+        img: canon5d,
+        name: "CANON 5d mark 4",
+        des: "30.4MP (CMOS Bayer RGB) / Full-Frame (36x24mm) / DCI 4K (4096 x 2160)30p / Canon EF / 1/8000s / 1/200s"
     }
 ]
