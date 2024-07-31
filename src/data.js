@@ -8,7 +8,6 @@ export default[
         name: "SONY FX3",
         type: 'photo',
         des: ""
-
     },
     {
         img: sonyA7SIII,
