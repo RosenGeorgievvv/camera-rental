@@ -21,23 +21,23 @@ const Footer = ({ theme }) => {
         <div className="footer-column">
           <ul>
             <li>
-              <a href="mailto:office@magicshoprental.com" className="email-link">
-                <img src={email} alt="email" /> office@magicshoprental.com
+              <a href="mailto:xxx" className="email-link">
+                <img src={email} alt="email" /> xxx@gmail.com
               </a>
             </li>
             <li>
               {mobileDevice ? (
-                <a href="tel:+359897890553" className="phone-link">
-                  <img src={phoneIcon} alt="phoneIcon" /> +359 897 89 05 53
+                <a href="tel:+359 xxx" className="phone-link">
+                  <img src={phoneIcon} alt="phoneIcon" /> +359 xxx
                 </a>
               ) : (
                 <>
-                  <img src={phoneIcon} alt="phoneIcon" /> +359 897 89 05 53
+                  <img src={phoneIcon} alt="phoneIcon" /> +359 xxx
                 </>
               )}
             </li>
             <li onClick={navigateToGoogleMaps} style={{ cursor: "pointer" }}>
-              Address: Levski – G 47, Sofia, Bulgaria
+              Address: Sofia, Bulgaria
             </li>
           </ul>
         </div>
